@@ -20,7 +20,7 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  color: #f25c05; /* Orange headings */
+  color: #fb8a48; /* Orange headings */
 }
 
 h1 {
@@ -41,7 +41,7 @@ h3 {
 }
 
 header {
-  border-bottom: 3px solid #f25c05; /* Orange border */
+  border-bottom: 3px solid #fb8a48; /* Orange border */
   padding-bottom: 0.8rem;
   margin-bottom: 2rem;
 }
@@ -56,7 +56,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #f25c05; /* Orange links */
+  color: #fb8a48; /* Orange links */
   padding: 6px 12px;
   border-radius: 4px;
   transition: background-color 0.25s ease, color 0.25s ease;
@@ -64,20 +64,20 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #f25c05;
-  color: #224459; /* Dark teal on hover */
+  background-color: #fb8a48;
+  color: #142834; /* Dark teal on hover */
 }
 
 main {
-  background: #224459;
+  background: #1d3a4a; /* Lighter teal for readability */
   border-radius: 8px;
   box-shadow: 0 6px 18px rgb(0 0 0 / 0.2);
   padding: 2.5rem 3rem;
 }
 
 .project-card {
-  border-left: 5px solid #f25c05;
-  background-color: #224459;
+  border-left: 5px solid #fb8a48;
+  background-color: #1d3a4a; /* Lighter teal inside cards */
   padding: 1.3rem 1.8rem;
   margin-bottom: 1.8rem;
   border-radius: 6px;
@@ -99,14 +99,14 @@ main {
 }
 
 .project-card a {
-  color: #f25c05;
+  color: #fb8a48;
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .project-card a:hover {
-  color: #ff7b2a; /* Brighter orange on hover */
+  color: #ff9f6b; /* Brighter orange on hover */
 }
 
 footer {
@@ -114,8 +114,8 @@ footer {
   margin-top: 3rem;
   padding: 1.5rem 0;
   font-size: 0.875rem;
-  color: #f25c05;
-  border-top: 1px solid rgba(242,92,5,0.3);
+  color: #fb8a48;
+  border-top: 1px solid rgba(251,138,72,0.3);
 }
 
 /* Responsive */
