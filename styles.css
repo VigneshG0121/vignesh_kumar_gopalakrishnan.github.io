@@ -1,157 +1,159 @@
-/* Formal and Colorful Stylesheet for Personal Research Website */
+/* Grey background with green accent inspired by gradfolio */
 
-/* Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #e0f7fa, #80deea);
-  color: #263238;
-  padding: 30px 20px;
-  max-width: 960px;
-  margin: auto;
-  line-height: 1.7;
+  background-color: #f5f5f7; /* Light grey background */
+  color: #2f4f4f; /* Dark slate grey text as base */
+  line-height: 1.65;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-size: 16px;
 }
 
-header {
-  border-bottom: 3px solid #0288d1;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #2c6e49; /* Deep green for headings */
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 2.7rem;
-  color: #01579b;
-  margin-bottom: 10px;
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  border-bottom: 3px solid #2c6e49; /* Green border */
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 2rem;
+  padding: 0.5rem 0 1rem 0;
 }
 
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #0288d1;
-  font-size: 1.1rem;
+  color: #3a855f; /* Medium green for nav links */
   padding: 6px 12px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #0288d1;
-  color: #e1f5fe;
+  background-color: #3a855f;
+  color: #f5f5f7; /* Light grey text on hover */
 }
 
 main {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(2, 136, 209, 0.3);
-}
-
-section.intro {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
-}
-
-section.projects-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgb(44 82 130 / 0.1);
+  padding: 2.5rem 3rem;
 }
 
 .project-card {
-  background: linear-gradient(145deg, #bbdefb, #e3f2fd);
-  border-left: 5px solid #0288d1;
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(2, 136, 209, 0.25);
+  border-left: 5px solid #2c6e49;
+  background-color: #eaf3ef;
+  padding: 1.3rem 1.8rem;
+  margin-bottom: 1.8rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgb(44 82 130 / 0.05);
   transition: box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 22px rgba(2, 136, 209, 0.45);
+  box-shadow: 0 8px 20px rgb(44 82 130 / 0.15);
 }
 
 .project-card h2 {
-  color: #01579b;
-  margin-bottom: 12px;
-  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c6e49;
 }
 
 .project-card p {
-  color: #37474f;
-  line-height: 1.5;
+  color: #4a5a52;
   font-size: 1rem;
-  margin-bottom: 10px;
 }
 
 .project-card a {
-  color: #01579b;
+  color: #31784f;
   text-decoration: underline;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .project-card a:hover {
-  color: #0288d1;
+  color: #2c6e49;
 }
 
-section.about-content {
-  font-size: 1.1rem;
-  color: #37474f;
-  max-width: 700px;
-  margin: auto;
+.about-content h2 {
+  color: #2c6e49;
+  margin-bottom: 1rem;
 }
 
-section.about-content h2 {
-  color: #01579b;
-  margin-bottom: 18px;
+.about-content p {
+  color: #4a5a52;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
 }
 
-section.about-content p {
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-section.about-content a {
-  color: #0288d1;
+.about-content a {
+  color: #3a855f;
   font-weight: 600;
   text-decoration: none;
 }
 
-section.about-content a:hover {
+.about-content a:hover {
   text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0 10px;
-  margin-top: 40px;
-  color: #546e7a;
-  font-size: 0.9rem;
-  border-top: 1px solid #cfd8dc;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  font-size: 0.875rem;
+  color: #73877d;
+  border-top: 1px solid #d7dad9;
 }
 
-/* Responsive Design */
-@media (max-width: 750px) {
-  section.projects-list {
-    grid-template-columns: 1fr;
-  }
-
+/* Responsive */
+@media (max-width: 700px) {
   nav ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .project-card {
+    padding: 1rem 1rem;
   }
 }
-
