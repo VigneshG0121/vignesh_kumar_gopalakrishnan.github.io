@@ -117,7 +117,22 @@ footer {
   color: #fb8a48;
   border-top: 1px solid rgba(251,138,72,0.3);
 }
+a {
+  color: #fb8a48;         /* Light orange links */
+  text-decoration: none;  /* Optional: remove underline */
+}
 
+a:visited {
+  color: #fb8a48;         /* Keep visited links same color */
+}
+
+a:hover {
+  color: #ff9f6b;         /* Slightly lighter on hover */
+}
+
+a:active {
+  color: #fb8a48;
+}
 /* Responsive */
 @media (max-width: 700px) {
   nav ul {
