@@ -1,84 +1,157 @@
-/* Reset */
+/* Formal and Colorful Stylesheet for Personal Research Website */
+
+/* Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background-color: #fafafa;
-  color: #333;
-  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  color: #263238;
+  padding: 30px 20px;
   max-width: 960px;
   margin: auto;
+  line-height: 1.7;
 }
 
 header {
-  margin-bottom: 20px;
+  border-bottom: 3px solid #0288d1;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: #01579b;
   margin-bottom: 10px;
-  color: #2c3e50;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 30px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #2980b9;
-  font-weight: bold;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  color: #e74c3c;
-}
-
-.intro, .projects-list, .about-content {
-  background: #fff;
-  padding: 20px;
+  font-weight: 600;
+  color: #0288d1;
+  font-size: 1.1rem;
+  padding: 6px 12px;
   border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #0288d1;
+  color: #e1f5fe;
+}
+
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(2, 136, 209, 0.3);
+}
+
+section.intro {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+section.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
 .project-card {
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  background: linear-gradient(145deg, #bbdefb, #e3f2fd);
+  border-left: 5px solid #0288d1;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(2, 136, 209, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 22px rgba(2, 136, 209, 0.45);
 }
 
 .project-card h2 {
-  color: #34495e;
+  color: #01579b;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  color: #37474f;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .project-card a {
-  color: #2980b9;
-  text-decoration: none;
+  color: #01579b;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .project-card a:hover {
+  color: #0288d1;
+}
+
+section.about-content {
+  font-size: 1.1rem;
+  color: #37474f;
+  max-width: 700px;
+  margin: auto;
+}
+
+section.about-content h2 {
+  color: #01579b;
+  margin-bottom: 18px;
+}
+
+section.about-content p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+section.about-content a {
+  color: #0288d1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section.about-content a:hover {
   text-decoration: underline;
 }
 
 footer {
   text-align: center;
+  padding: 20px 0 10px;
   margin-top: 40px;
-  color: #999;
-  font-size: 0.9em;
+  color: #546e7a;
+  font-size: 0.9rem;
+  border-top: 1px solid #cfd8dc;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 750px) {
+  section.projects-list {
+    grid-template-columns: 1fr;
+  }
+
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 }
+
