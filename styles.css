@@ -10,7 +10,7 @@
 
 body {
   background-color: #142834; /* Dark teal background */
-  color: #fb8a48; /* Default: Orange text */
+  color: #ffffff; /* Default: Orange text */
   line-height: 1.65;
   max-width: 900px;
   margin: 2rem auto;
@@ -204,6 +204,16 @@ a:active {
 
 .projects-list .project-card a:hover {
   color: #ff9f6b; /* Light orange on hover */
+}
+
+/* Project card title link: orange default, white on hover */
+.projects-list .project-card h2 a {
+  color: #fb8a48; /* Orange by default */
+  text-decoration: none;
+}
+
+.projects-list .project-card h2 a:hover {
+  color: #ffffff; /* White on hover */
 }
 
 /* === RESPONSIVE === */
