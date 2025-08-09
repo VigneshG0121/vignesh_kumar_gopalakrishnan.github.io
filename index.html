@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+.contact-icons {
+  display: flex;
+  gap: 15px; /* spacing between icons */
+  justify-content: start; /* or center */
+  align-items: center;
+}
+
+.contact-icons a {
+  font-size: 1.8rem;
+  color: #fb8a48; /* orange tone */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-icons a:hover {
+  color: #ffffff; /* white on hover */
+  transform: scale(1.2);
+}
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically if needed */
+}
+</style>
+<body>
+  <header>
+    <h1>Welcome to My Research Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="project.html">Research Projects</a></li>
+        <li><a href="publications.html">Publications & Patents</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Hello, I'm Vignesh Kumar Gopalakrishnan</h2>
+      <p>
+        I am an Undergraduate Researcher trying to figure out what really excites me. This journey has taken me from designing and building the chassis of electric Formula Student racecars 
+        to modeling how cells squishiness affects their collective signalling dynamics. This website is a compilation of the cool stuff I've worked on along the way
+      </p>
+      <p>
+        Feel free to explore my projects and get in touch!
+      </p>
+    <div class="contact-icons">
+      <a href="mailto:ed21b073@smail.iitm.ac.in" title="School Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/vignesh-kumar-gopalakrishnan-42257124" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://scholar.google.com/citations?user=DSrG5aAAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="mailto:gvigneshkumar@outlook.com" title="Personal Email"><i class="fas fa-envelope-open-text"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vignesh Kumar Gopalakrishnan</p>
+  </footer>
+</body>
+</html>
